@@ -5,7 +5,7 @@ import java.util.List;
 import com.stg.exceptions.ResourceNotFoundException;
 import com.stg.model.Candidate;
 
-public class CandidateInterfaceImpl implements CandidateInterface {
+public class CandidateServiceImpl implements CandidateService {
 
 	@Override
 	public Candidate create(Candidate candidate) {

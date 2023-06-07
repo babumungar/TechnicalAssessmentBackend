@@ -1,5 +1,10 @@
 package com.stg.repository;
 
-public interface CandidateRepository {
+import org.springframework.data.repository.CrudRepository;
+
+import com.stg.model.Candidate;
+
+public interface CandidateRepository extends CrudRepository<Candidate, Integer>  {
+	
 
 }

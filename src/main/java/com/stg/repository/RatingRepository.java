@@ -1,5 +1,9 @@
 package com.stg.repository;
 
-public interface RatingRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
 
+import com.stg.model.Rating;
+
+public interface RatingRepository extends JpaRepository<Rating, Integer>  {
+	
 }

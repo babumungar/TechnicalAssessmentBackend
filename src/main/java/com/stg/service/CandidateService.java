@@ -5,7 +5,7 @@ import java.util.List;
 import com.stg.exceptions.ResourceNotFoundException;
 import com.stg.model.Candidate;
 
-public interface CandidateInterface {
+public interface CandidateService {
 	public abstract Candidate create(Candidate candidate);
 
 	public abstract List<Candidate> findAllCandidates() throws ResourceNotFoundException;
