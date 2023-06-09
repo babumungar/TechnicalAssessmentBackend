@@ -81,16 +81,16 @@ public class CandidateServiceImpl implements CandidateService {
 	    }
 	}
 
-	@Override
-	public Optional<Candidate> getCandidate(String email) {
-		Optional<Candidate> candidateObj = candidateRepository.findByEmail(email);
-
-		if (candidateObj.isPresent()) {
-			return candidateObj;
-		} else {
-			throw new ResourceNotFoundException("No data ");
-		}
-	}
+//	@Override
+//	public Optional<Candidate> getCandidate(String email) {
+//		Optional<Candidate> candidateObj = candidateRepository.findByEmail(email);
+//
+//		if (candidateObj.isPresent()) {
+//			return candidateObj;
+//		} else {
+//			throw new ResourceNotFoundException("No data ");
+//		}
+//	}
 
 
 }
