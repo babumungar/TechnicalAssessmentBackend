@@ -18,8 +18,8 @@ public class Skill  {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int skill_Id;
 
-	@Column(name = "sill_level")
-	private int sillLevel;
+	@Column(name = "skill_level")
+	private int skillLevel;
 
 	@Column(name = "skill_name")
 	private String skillName;
@@ -39,12 +39,12 @@ public class Skill  {
 		this.skill_Id = skill_Id;
 	}
 
-	public int getSillLevel() {
-		return this.sillLevel;
+	public int getSkillLevel() {
+		return this.skillLevel;
 	}
 
-	public void setSillLevel(int sillLevel) {
-		this.sillLevel = sillLevel;
+	public void setSkillLevel(int skillLevel) {
+		this.skillLevel = skillLevel;
 	}
 
 	public String getSkillName() {
