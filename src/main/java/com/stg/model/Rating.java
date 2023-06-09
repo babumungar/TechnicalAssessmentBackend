@@ -15,8 +15,8 @@ public class Rating {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int rating_Id;
 
-	@Column(name = "skill_feedback")
-	private String skillFeedback;
+//	@Column(name = "skill_feedback")
+//	private String skillFeedback;
 
 	@Column(name = "skill_rating")
 	private int skillRating;
@@ -42,14 +42,7 @@ public class Rating {
 		this.rating_Id = rating_Id;
 	}
 
-	public String getSkillFeedback() {
-		return this.skillFeedback;
-	}
-
-	public void setSkillFeedback(String skillFeedback) {
-		this.skillFeedback = skillFeedback;
-	}
-
+	
 	public int getSkillRating() {
 		return this.skillRating;
 	}

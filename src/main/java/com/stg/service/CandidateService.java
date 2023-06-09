@@ -19,6 +19,6 @@ public interface CandidateService {
 
 	public abstract Optional<Candidate> updateById(int candidate_Id, Candidate candidate) throws ResourceNotFoundException;
 
-//	public abstract Optional<Candidate> getCandidate(String email);
+	public abstract Optional<Candidate> getCandidate(String email);
 
 }

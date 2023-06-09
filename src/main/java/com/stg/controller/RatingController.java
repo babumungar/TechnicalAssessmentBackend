@@ -15,7 +15,7 @@ public class RatingController {
 	private RatingService ratingService;
 
 	@PostMapping(value = "/create/{skillRating}/{candidateId}/{skillId}")
-	public ResponseEntity<Rating> addInterviewDetials(@RequestBody Rating rating, @PathVariable("skillRating") int skillRating, @PathVariable("candidateId") int candidateId, @PathVariable("skillId") int skillId ) {
-		return new ResponseEntity<Rating>(ratingService.addSkillRating(skillRating, candidateId, skillId), HttpStatus.CREATED);
+	public ResponseEntity<Rating> addInterviewDetials(@RequestBody Rating rating, @PathVariable("ratingId") int ratingId, @PathVariable("skillRating") int skillRating, @PathVariable("candidateId") int candidateId, @PathVariable("skillId") int skillId ) throws Exception {
+		return new ResponseEntity<Rating>(ratingService.addSkillRating(ratingId, skillRating, candidateId, skillId),HttpStatus.CREATED);
 	}
 }
